@@ -4,31 +4,31 @@ var experiment = [
         secs: 5 },
     {   
         action: 'Rest',
-        secs: 15 },
+        secs: 5 },
     {   
         action: 'Drink',
-        secs: 15 },     
+        secs: 5 },     
     {   
         action: 'Talk',
-        secs: 15 },
+        secs: 5 },
 
     {   
         action: 'Rest',
-        secs: 15 },
+        secs: 5 },
     {   
         action: 'Drink',
-        secs: 15 },     
+        secs: 5 },     
     {   
         action: 'Talk',
-        secs: 15 },
+        secs: 5 },
         
     {   
         action: 'Rest',
-        secs: 15 },
+        secs: 5 },
     {   
         action: 'Drink',
-        secs: 15 },     
+        secs: 5 },     
     {   
         action: 'Talk',
-        secs: 15 },
+        secs: 5 },
 ]

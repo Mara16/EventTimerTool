@@ -127,7 +127,7 @@ function updateSelection(newIndex) {
     var currentTime = Date.now();
 
     if (newIndex > 0) {
-        $("#resultlabel").append(previousTime + "," + currentTime + "," + experiment[globalIndex - 1].action+"\n");
+        $("#resultlabel").append(new Date(previousTime) + "," + new Date(currentTime) + "," + experiment[globalIndex - 1].action+"\n");
     }
     
     previousTime = currentTime;
@@ -168,8 +168,9 @@ function playsound() {
         $('#timer').css('color', 'purple')
         // $('#ActionGuide').text('Prepare for the next action: ' + experiment[globalIndex + 1].action)
     } else if (globalIndex == experiment.length - 1){
-        $("#resultlabel").append(previousTime + "," + Date.now() + "," + experiment[experiment.length - 1].action+"\n");
+        //$("#resultlabel").append(previousTime + "," + Date.now() + "," + experiment[experiment.length - 1].action+"\n");
+        $("#resultlabel").append(new Date(previousTime) + "," + new Date(Date.now()) + "," + experiment[experiment.length - 1].action+"\n");
 
-        $('#ActionGuide').text('Done!')
+        $('#ActionGuide').text('Done!:)')
     }
 }
